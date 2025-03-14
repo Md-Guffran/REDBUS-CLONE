@@ -1,0 +1,26 @@
+<div class="selectbus-page">
+  <app-right></app-right>
+  <app-bus-box ng
+    [operatorname]="'Operator Name'"
+    [bustypename]="'Bus Type'"
+    [busdeparturetime]="routedetails.busdeparturetime"
+    [busarrivaltime]="routedetails.busarrivaltime"
+    [routedetails]="routedetails"
+    [avgrating]="4.5"
+    [totalreview]="50"
+    [filledseats]="[1, 2, 3]"
+    [livetracking]="1"
+    [reschedulable]="1"
+    [busid]="'bus123'"
+    [bustype]="''"
+  ></app-bus-box>
+  <app-left></app-left>
+</div>
+<!-- <div class="'selectbus">
+  <app-header></app-header>
+  <div class="SelectBUS_MAINCONTENT">
+      <app-left></app-left>
+      <app-right></app-right>
+        [seatprice]="500" 
+  </div>
+</div> -->

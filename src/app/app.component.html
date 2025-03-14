@@ -1,0 +1,21 @@
+<app-navbar>
+<select title="Select Language" (change)="changeLanguage($event)">
+  <option value="en">English</option>
+  <option value="es">Español</option>
+  <option value="fr">Français</option>
+  <option value="hi">हिंदी</option>
+  <option value="te">తెలుగు</option>
+  <option value="ml">മലയാളം</option>
+  <option value="kn">ಕನ್ನಡ</option>
+  <option value="bn">বাংলা</option>
+  <option value="ta">தமிழ்</option>
+  <option value="ks">كٲشُر</option>
+  <option value="ja">日本語</option>
+  <option value="zh">中文 (Simplified)</option>
+  <option value="ko">한국어</option>
+</select>
+
+<h1>{{ 'TITLE' | translate }}</h1>
+</app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

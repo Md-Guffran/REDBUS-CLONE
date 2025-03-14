@@ -1,0 +1,22 @@
+.SelectBUS_MAINCONTENT{
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+
+.selectbus-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.selectbus-page .bus-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .selectbus-page .bus-list {
+    flex-direction: column;
+  }
+}

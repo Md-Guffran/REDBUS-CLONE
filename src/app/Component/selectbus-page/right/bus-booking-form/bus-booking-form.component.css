@@ -1,0 +1,100 @@
+body {
+  font-weight: 400;
+}
+
+.passenger-main-title {
+  text-align: center;
+  background-color: white;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  color: #4a4a4a;
+}
+
+.passanger-info-title {
+  display: flex;
+  padding: 0.5rem;
+  font-weight: 600;
+  color: #1c1c1c;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.content-block {
+  margin: 1.25rem;
+  box-shadow: 0 0 4px 0 hsla(0, 0%, 64%, 0.5);
+  padding: 1.25rem 2.5rem;
+  background: #fff;
+}
+
+.form-label {
+  margin-top: 1.25rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: left;
+  color: rgba(74, 74, 74, 0.86);
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  background: #fff;
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #bababa;
+  outline: none;
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+  color: rgba(74, 74, 74, 0.86) !important;
+}
+
+.form_radio_label {
+  padding: 0 0.45em;
+  margin: 0 20px 0 0;
+  font-size: 14px;
+}
+
+.radioButton {
+  z-index: 1;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.passenger-contact-msg {
+  margin-bottom: 1.5em;
+  color: #333;
+  background-color: #fff181;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px 20px;
+  width: fit-content;
+}
+
+.insure_title {
+  margin: 1em;
+  padding: 10px;
+  background-color: #ffeab8;
+  font-weight: 600;
+  font-size: 12px;
+  color: #1c1c1c;
+}
+
+.proceed_to_button {
+  background-color: #e9555d !important;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  overflow: hidden;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  color: #fff;
+  transition: 0.1s;
+}

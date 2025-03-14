@@ -1,0 +1,80 @@
+<div class="ProfilePannel">
+    <div class="leftPart">
+      <ul class="leftPannel">
+        <li class="leftPannel_eachListItem">
+          <mat-icon class="icon-style">perm_identity</mat-icon>
+  
+          <div class="leftPannel_eachListItem_text">
+            {{ 'Dashboard' }}
+          </div>
+  
+        </li>
+        <!-- Other list items -->
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('trips')">
+          <i class="material-icons location-icon">location_on</i>
+  
+          <div class="leftPannel_eachListItem_text">My Trips</div>
+        </li>
+        <!-- Add other list items here -->
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('profile')">
+          <i class="material-icons settings-icon">settings</i>
+          <div class="leftPannel_eachListItem_text">My Profile</div>
+        </li>
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('wallet')">
+          <i class="material-icons wallet-icon">account_balance_wallet</i>
+  
+          <div class="leftPannel_eachListItem_text">Wallet</div>
+        </li>
+      </ul>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="seprator"></div>
+  
+    <div *ngIf="selecteditem === 'trips'">
+      <!-- MyTrips component or content -->
+      <app-my-trip [booking]="mytrip"></app-my-trip> 
+    </div>
+    <div *ngIf="selecteditem === 'wallet'">
+      Wallet feature coming soon...
+    </div>
+    <div *ngIf="selecteditem === 'profile'" class="rightPannel">
+      <span class="profileHeading">{{ 'My Profile' }}</span>
+      <div class="profilebox">
+        <div class="flex-space-between">
+          <div class="userDetailContainer">
+            <div class="userDetailHeading">Your name</div>
+            <div class="userDetailInfo">{{ currentcustomer ? currentname : 'User' }}</div>
+          </div>
+          <div class="userDetailContainer">
+            <div class="userDetailHeading">Date of Birth</div>
+            <div class="userDetailInfo">1993-03-04</div>
+          </div>
+        </div>
+        <div class="flex-space-between-margin-top">
+          <div class="userDetailColumn">
+            <div class="userDetailHeading">Gender</div>
+            <div class="userDetailInfo">{{ currentcustomer ? currentcustomer.gender : '-' }}</div>
+          </div>
+        </div>
+        <div class="contactDetailsContainer">
+          <div class="contactLine"></div>
+          <div class="contactDetailsHeading">Contact Details</div>
+          <div class="contactLine"></div>
+        </div>
+        <div class="contactDetails">
+          <div class="contactDetailsColumn">
+            <div class="userDetailHeading">email</div>
+            <div class="userDetailInfo">{{ currentcustomer ? currentemail : '-' }}</div>
+          </div>
+          <div class="contactDetailsColumnStyled">
+            <div class="userDetailHeading">phone</div>
+            <div class="userDetailInfo">12345678</div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
